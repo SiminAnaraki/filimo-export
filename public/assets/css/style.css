@@ -1,0 +1,180 @@
+@font-face {
+    font-family: "Vazir";
+    src: url('../fonts/vazir/misc/Farsi-Digits/fonts/webfonts/Vazirmatn-FD-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Vazir";
+    src: url('../fonts/vazir/misc/Farsi-Digits/fonts/webfonts/Vazirmatn-FD-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Vazir";
+    src: url('../fonts/vazir/misc/Farsi-Digits/fonts/webfonts/Vazirmatn-FD-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Vazir";
+    src: url('../fonts/vazir/misc/Farsi-Digits/fonts/webfonts/Vazirmatn-FD-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Vazir";
+    src: url('../fonts/vazir/misc/Farsi-Digits/fonts/webfonts/Vazirmatn-FD-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Vazir";
+    src: url('../fonts/vazir/misc/Farsi-Digits/fonts/webfonts/Vazirmatn-FD-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Vazir";
+    src: url('../fonts/vazir/misc/Farsi-Digits/fonts/webfonts/Vazirmatn-FD-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Vazir";
+    src: url('../fonts/vazir/misc/Farsi-Digits/fonts/webfonts/Vazirmatn-FD-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Vazir";
+    src: url('../fonts/vazir/misc/Farsi-Digits/fonts/webfonts/Vazirmatn-FD-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+body {
+    direction:rtl;
+    background: #26272b;
+    font-family: "Vazir";
+}
+ul,li {
+    list-style: none;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color:#fff;
+}
+*,*:after,*:before {
+    box-sizing:border-box;
+}
+h3 , h2 , h1 {
+    color:#fff;
+}
+p {
+    color:#959ba2;
+}
+.container {
+     width: 1200px;
+     margin:0 auto;
+}
+.films ul {
+    display: flex;
+    justify-content: space-between;
+    padding:20px 0;
+}
+.films ul li .layer {
+    position: relative;
+}
+.films ul li .layer:after {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,.3);
+    width:100%;
+    height:100%;
+    border-radius:8px;
+    transition: all .3s;
+}
+.films  li:hover .layer:after {
+    opacity:0;
+}
+.films ul li img {
+    border-radius:8px;
+    width:100%;
+    height:100%;
+}
+.tamasha {
+    text-align: center;
+}
+.tamasha .first {
+    padding-top:100px;
+}
+.tamasha ul {
+    display: flex;
+    justify-content: space-between;
+    padding:20px 0;
+}
+.tamasha ul li {
+    width:33.33;
+    padding:0 20px;
+    position: relative;
+}
+.tamasha ul li h5 {
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    transform: translateX(-50%);
+    background:rgba(0,0,0,.6);
+    border-radius: 20px;
+    width:70%;
+    padding:10px 0;
+}
+.tamasha ul li img {
+    border:5px solid #000;
+    width:100%;
+    height:auto;
+    opacity:.6;
+    transition: all .3s;
+}
+.tamasha ul li:hover img {
+    width:102%;
+    height: 100%;
+}
+.tamasha  .first .more-info {
+    color: #f4843f;
+    margin:0;
+    
+}
+.tamasha  .first .info {
+    display:flex;
+    background:rgba(240, 135, 70,.1);
+    padding:10px 0px;
+    border-radius:30px;
+    width:15%;  
+    align-items: center;
+    justify-content: center;
+    margin:0 auto;
+    gap:8px;
+}
+.tamasha  .first .info i {
+    color:#f4843f;
+}

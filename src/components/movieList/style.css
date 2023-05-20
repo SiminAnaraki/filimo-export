@@ -1,0 +1,29 @@
+h3 , h2 , h1 {
+    color:#fff;
+}
+.list ul {
+    display: flex;
+    justify-content: space-between;
+}
+.list ul li img {
+    border-radius: 10px;
+    width:100%;
+    height:100%;
+}
+.list ul li .layer {
+    position: relative;
+}
+.list ul li .layer:after {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,.3);
+    width:100%;
+    height:96%;
+    border-radius:8px;
+    transition: all .3s;
+}
+.list  li:hover .layer:after {
+    opacity:0;
+}
